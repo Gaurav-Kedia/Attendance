@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    tools:context="com.gaurav.attendance.MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/title_home"
+        android:textColor="#FFFFFF"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#03dac5"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="344dp"
+        android:layout_height="351dp"
+        android:layout_margin="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.79"
+        app:cardCornerRadius="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/custom"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/First"
+                    style="@style/custom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="First name" />
+
+                <EditText
+                    android:id="@+id/Last"
+                    style="@style/custom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Last name" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/custom"
+                android:hint="Enter your email"/>
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/custom"
+                android:hint="Enter your password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/rollnum"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:hint="Enter your Roll no."
+                android:inputType="number"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/buttonRegister"
+                style="@style/custom"
+                android:layout_weight="0.9"
+                android:text="Register user"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/textviewsignin"
+                style="@style/custom"
+                android:textSize="13dp"
+                android:layout_weight="0.7"
+                android:padding="10dp"
+                android:text="Already register sign in here"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="You have:"
+            android:fontFamily="casual"
+            android:textSize="23dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/Profess"
+            android:text="Profess"
+            android:fontFamily="casual"
+            android:textSize="23dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="You are:"
+                android:fontFamily="casual"
+                android:textSize="23dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/got"
+                android:text="Profess"
+                android:fontFamily="casual"
+                android:textSize="23dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email verification"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/signoutbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="signout" />
+
+    </LinearLayout>
+
+</RelativeLayout>
